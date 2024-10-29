@@ -1,5 +1,11 @@
 import sys
+import os
+
+# Add the src directory to the Python path
+sys.path.append(os.path.join('src','logger.py'))
+
 from src.logger import logging
+
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
